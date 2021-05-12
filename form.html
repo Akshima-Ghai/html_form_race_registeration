@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1 - Forms</title>
+</head>
+<body>
+    <h1>Race Registeration</h1>
+    <form action="">
+        <label for="first">First Name</label>
+        <input type="text" required id="first" name="firstname">
+        <label for="last">Last Name</label>
+        <input type="text" id="last" required name="lastname">
+        <p>Select a Race</p>
+        <div>
+            <input type="radio" name="run" id="funrun" value="funrun">
+            <label for="funrun">Fun Run 5K</label><br>
+            <input type="radio" name="run" id="half" value="half">
+            <label for="half">Half Marathon</label><br>
+            <input type="radio" name="run" id="full" value="full">
+            <label for="full">Full Marathon</label><br>
+        </div>
+        <div>
+            <label for="email">Enter Email</label>
+            <input type="email" required id="email" name="email">
+            <label for="pwd">Enter Password</label>
+            <input type="password" required id="pwd" name="password">
+        </div>
+        <div>
+            <label for="age">Select Age Group</label>
+            <select name="age" id="age">
+                <option value="u18">Under 18</option>
+                <option value="age18-30">18-30</option>
+                <option value="age30-50">30-50</option>
+                <option value="age50+">50+</option>
+            </select>
+        </div>
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+</html>
